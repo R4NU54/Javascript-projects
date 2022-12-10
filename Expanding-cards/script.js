@@ -1,6 +1,6 @@
-const container = document.querySelector('.container')
+const container = document.querySelector('.cards')
 
-container.addEventListener('mouseover', (event) => {
+container.addEventListener('click', (event) => {
 	if (event.target.className == 'panel') {
 		Array.from(container.children).forEach((child) => {
 			child.classList.remove('active')
