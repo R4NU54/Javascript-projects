@@ -5,7 +5,7 @@ Aqui iré subiendo los pequeños progresos que haga en JavaScript.😎
 
 |  #  | Fecha      | Proyecto                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | :-: | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 01  | 2022-12-08 | [Expanding Cards] (https://r4nu54.github.io/Javascript-projects/Expanding-cards/) <br> Fuente: [Expanding Cards](https://github.com/bradtraversy/50projects50days/tree/master/expanding-cards) (Brad Traversy y Florin Pop) |
-| 02  | 2022-12-10 | [Color flipper] (https://github.com/R4NU54/Javascript-projects/tree/main/Color-flipper) <br> Fuente: [Javacript Projects](https://www.vanillajavascriptprojects.com/) (John Smilga). |
+| 01  | 2022-12-08 | [Expanding Cards](https://github.com/R4NU54/Javascript-projects/tree/main/Expanding-cards) <br> Fuente: [Expanding Cards](https://github.com/bradtraversy/50projects50days/tree/master/expanding-cards) (Brad Traversy y Florin Pop) |
+| 02  | 2022-12-10 | [Color flipper](https://github.com/R4NU54/Javascript-projects/tree/main/Color-flipper) <br> Fuente: [Javacript Projects](https://www.vanillajavascriptprojects.com/) (John Smilga). |
 
 
