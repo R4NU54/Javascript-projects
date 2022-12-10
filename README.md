@@ -1,5 +1,5 @@
-# JavaScript Projects
-## Estos son los proyectos con Javascript plano, HTML y CSS
+# Proyectos con Javascript y HTML/CSS
+### Estos son los proyectos con Javascript plano, HTML y CSS
 Aqui iré subiendo los pequeños progresos que haga en JavaScript.😎
 <hr>
 
