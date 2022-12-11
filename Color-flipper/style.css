@@ -17,6 +17,7 @@ h1 {
 	height: 76vh;
 	padding: 2rem;
 	border-radius: 1rem;
+	transition: 0.5s;
 }
 
 .main h2 {
