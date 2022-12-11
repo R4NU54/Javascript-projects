@@ -14,6 +14,7 @@ h1 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	border: solid 1px black;
 	height: 76vh;
 	padding: 2rem;
 	border-radius: 1rem;
@@ -35,7 +36,7 @@ h1 {
 	border-radius: 1rem;
 	padding: 0.5rem;
 	cursor: pointer;
-	opacity: 0.5;
+	opacity: 0.8;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.353);
 	border: none;
 }
