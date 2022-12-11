@@ -37,7 +37,6 @@ h1 {
 	position: relative;
 	transition: flex 0.3s ease-in;
 	opacity: 0.8;
-	scroll-behavior: smooth;
 }
 
 .active {
