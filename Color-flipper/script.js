@@ -14,6 +14,12 @@ const btn = document.getElementById('btn')
 const colorTag = document.getElementById('colorTag')
 const main = document.getElementById('main')
 
+btn.addEventListener('click', changeColor)
+
+function getRandomColor() {
+	return Math.floor(Math.random() * colors.length)
+}
+
 function changeColor() {
 	const oldColor = main.style.backgroundColor
 	let newColor = colors[getRandomColor()]
@@ -25,10 +31,4 @@ function changeColor() {
 	main.style.backgroundColor = newColor
 	colorTag.textContent = newColor
 	colorTag.style.color = newColor
-}
-
-btn.addEventListener('click', changeColor)
-
-function getRandomColor() {
-	return Math.floor(Math.random() * colors.length)
 }
