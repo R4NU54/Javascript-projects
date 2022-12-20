@@ -60,7 +60,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url('./snowflakes-red-background.svg');
+	background-image: url('../assets/snowflakes-red-background.svg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -73,9 +73,10 @@ body {
 	justify-content: center;
 	width: 30rem;
 	background-color: white;
-	padding: 1rem;
+	padding: 1rem 0;
 	border-radius: 1rem;
 	box-shadow: 5px 5px 15px 5px #000000ab;
+	position: relative;
 }
 .title h1 {
 	display: flex;
@@ -84,6 +85,15 @@ body {
 	margin-bottom: 0;
 }
 
+#decoration-top {
+	position: absolute;
+	top: -50px;
+	right: -90px;
+	width: 150px;
+	transform: rotate(15deg);
+	filter: drop-shadow(5px 5px 8px black);
+	transition: filter 0.2s ease-in;
+}
 /* 
 @media (max-width: 680px) {
 	.title h1 {
@@ -110,6 +120,7 @@ body {
 
 #inputGift:focus {
 	background-color: rgb(220, 20, 60, 0.2);
+	transition: 0.3s;
 }
 
 #submitGift {
@@ -122,7 +133,8 @@ body {
 
 #submitGift:hover {
 	color: white;
-	background-color: crimson;
+	background-color: rgb(0, 128, 0, 0.5);
+	transition: 0.3s;
 }
 
 /* Listado */
@@ -130,11 +142,25 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 25rem;
+	width: 100%;
 	text-align: center;
 }
 
-.giftList ul li {
+.giftList ul {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+#list li {
 	font-size: 1.2rem;
 	list-style-type: none;
+}
+
+.giftList li:nth-child(odd) {
+	background-color: rgb(105, 105, 105, 0.2);
+}
+
+.giftList li:hover {
+	background-color: rgb(0, 128, 0, 0.5);
+	transition: 0.3s;
 }

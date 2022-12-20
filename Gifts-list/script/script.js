@@ -14,10 +14,11 @@ form.addEventListener('submit', (e) => {
 		setTimeout(() => {
 			form.classList.remove('shake')
 		}, 500)
+	} else {
+		addItem(gift.value)
+		persistItem(gift.value)
+		gift.value = ''
 	}
-	addItem(gift.value)
-	persistItem(gift.value)
-	gift.value = ''
 })
 
 // Functions
