@@ -149,15 +149,34 @@ body {
 	width: 100%;
 }
 #list li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 1.2rem;
+	position: relative;
 	list-style-type: none;
 }
 
+#list li button {
+	color: white;
+	background-color: rgb(220, 20, 60, 0.5);
+	border: none;
+	border-radius: 5px;
+	padding: 3px;
+	position: absolute;
+	right: 30px;
+}
+
+#list li button:hover {
+	background-color: rgb(220, 20, 60, 1);
+	transition: 0.3s;
+}
 .giftList li:nth-child(odd) {
 	background-color: rgb(105, 105, 105, 0.2);
 }
 
 .giftList li:hover {
+	text-decoration-line: line-through;
 	background-color: rgb(0, 128, 0, 0.5);
 	transition: 0.3s;
 }
