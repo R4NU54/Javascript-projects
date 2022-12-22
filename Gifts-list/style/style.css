@@ -66,6 +66,7 @@ body {
 	background-repeat: no-repeat;
 	height: 100vh;
 }
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -78,6 +79,7 @@ body {
 	box-shadow: 5px 5px 15px 5px #000000ab;
 	position: relative;
 }
+
 .title h1 {
 	display: flex;
 	font-size: 3.5rem;
@@ -117,10 +119,12 @@ body {
 	border-radius: 0.5rem;
 	border: none;
 }
+
 #inputGift:focus {
 	background-color: rgb(220, 20, 60, 0.2);
 	transition: 0.3s;
 }
+
 #submitGift {
 	font-size: 1rem;
 	padding: 0.5rem;
@@ -128,6 +132,7 @@ body {
 	cursor: pointer;
 	border: none;
 }
+
 #submitGift:hover {
 	color: white;
 	background-color: rgb(0, 128, 0, 0.5);
@@ -137,9 +142,10 @@ body {
 /* List of gifts */
 .giftList {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 100%;
+	width: 90%;
 	text-align: center;
 }
 
@@ -147,7 +153,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	transition: 0.3s;
 }
+
 #list li {
 	display: flex;
 	justify-content: center;
@@ -171,12 +179,29 @@ body {
 	background-color: rgb(220, 20, 60, 1);
 	transition: 0.3s;
 }
+
 .giftList li:nth-child(odd) {
 	background-color: rgb(105, 105, 105, 0.2);
+	transition: 0.3s;
 }
 
 .giftList li:hover {
 	text-decoration-line: line-through;
 	background-color: rgb(0, 128, 0, 0.5);
+	transition: 0.3s;
+}
+
+.deleteAllButton {
+	font-size: 1rem;
+	padding: 0.5rem;
+	margin-top: 2rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	border: none;
+}
+
+.deleteAllButton:hover {
+	color: white;
+	background-color: rgb(220, 20, 60, 1);
 	transition: 0.3s;
 }
