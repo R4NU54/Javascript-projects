@@ -2,10 +2,11 @@
 let listOfGifts = ['Ropa Crossfit', 'Monitor Curvo', 'Zapatillas Crossfit']
 
 // SELECT ITEMS
-const ul = document.getElementById('list')
+const giftList = document.getElementById('list')
 const form = document.getElementById('formGift')
 const gift = document.getElementById('inputGift')
-let buttonDelete = document.getElementById('delete')
+// const buttonDelete = document.getElementById('delete')
+const buttonDeleteAll = document.getElementById('deleteAllButton')
 
 // Event listeners
 form.addEventListener('submit', (e) => {
@@ -22,11 +23,20 @@ form.addEventListener('submit', (e) => {
 	}
 })
 
-ul.addEventListener('click', (event) => {
+giftList.addEventListener('click', (event) => {
 	// remove from the list
 	event.target.remove()
 	// remove from storage
 	listOfGifts = deleteItemFromStorage(event.target.textContent)
+})
+
+deleteAllButton.addEventListener('click', (event) => {
+	// remove all from the list
+	while (giftList.lastChild) {
+		giftList.removeChild(giftList.lastChild)
+	}
+	// remove from storage
+	listOfGifts = []
 })
 
 // Functions
@@ -47,7 +57,7 @@ function addItem(item) {
 	// button.id = 'delete'
 	// li.appendChild(button)
 	li.textContent = item
-	ul.appendChild(li)
+	giftList.appendChild(li)
 }
 
 function initializeList() {
