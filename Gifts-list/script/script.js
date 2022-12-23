@@ -7,7 +7,7 @@ const form = document.getElementById('formGift')
 const gift = document.getElementById('inputGift')
 // const buttonDelete = document.getElementById('delete')
 const buttonDeleteAll = document.getElementById('deleteAllButton')
-const msgEmptyList = document.querySelector('#msg-empty')
+const msgEmptyList = document.getElementById('msg-empty')
 
 // Event listeners
 form.addEventListener('submit', (e) => {
