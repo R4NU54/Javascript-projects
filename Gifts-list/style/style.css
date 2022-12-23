@@ -139,6 +139,11 @@ body {
 	transition: 0.3s;
 }
 
+/* No gift message*/
+.hidden {
+	display: none;
+}
+
 /* List of gifts */
 .giftList {
 	display: flex;

@@ -7,6 +7,7 @@ const form = document.getElementById('formGift')
 const gift = document.getElementById('inputGift')
 // const buttonDelete = document.getElementById('delete')
 const buttonDeleteAll = document.getElementById('deleteAllButton')
+const msgEmptyList = document.querySelector('#msg-empty')
 
 // Event listeners
 form.addEventListener('submit', (e) => {
@@ -17,6 +18,9 @@ form.addEventListener('submit', (e) => {
 			form.classList.remove('shake')
 		}, 500)
 	} else {
+		if (listOfGifts.length == 0) {
+			hideMsgEmptyList()
+		}
 		addItem(gift.value)
 		storeItem(gift.value)
 		gift.value = ''
@@ -28,6 +32,10 @@ giftList.addEventListener('click', (event) => {
 	event.target.remove()
 	// remove from storage
 	listOfGifts = deleteItemFromStorage(event.target.textContent)
+
+	if (listOfGifts.length == 0) {
+		showMsgEmptyList()
+	}
 })
 
 deleteAllButton.addEventListener('click', (event) => {
@@ -37,6 +45,7 @@ deleteAllButton.addEventListener('click', (event) => {
 	}
 	// remove from storage
 	listOfGifts = []
+	showMsgEmptyList()
 })
 
 // Functions
@@ -60,9 +69,22 @@ function addItem(item) {
 	giftList.appendChild(li)
 }
 
-function initializeList() {
-	listOfGifts.forEach((giftText) => {
-		addItem(giftText)
-	})
+function showMsgEmptyList() {
+	msgEmptyList.classList.remove('hidden')
 }
+
+function hideMsgEmptyList() {
+	msgEmptyList.classList.add('hidden')
+}
+
+function initializeList() {
+	if (listOfGifts.length == 0) {
+		showMsgEmptyList()
+	} else {
+		listOfGifts.forEach((giftText) => {
+			addItem(giftText)
+		})
+	}
+}
+
 initializeList()
