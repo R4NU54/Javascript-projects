@@ -1,7 +1,7 @@
-// Initial List
+/////////////////// Initial List /////////////////////
 let listOfGifts = ['Ropa Crossfit', 'Monitor Curvo', 'Zapatillas Crossfit']
 
-// SELECT ITEMS
+///////////////// SELECT ITEMS //////////////////
 const giftList = document.getElementById('list')
 const form = document.getElementById('formGift')
 const gift = document.getElementById('inputGift')
@@ -9,7 +9,9 @@ const gift = document.getElementById('inputGift')
 const buttonDeleteAll = document.getElementById('deleteAllButton')
 const msgEmptyList = document.getElementById('msg-empty')
 
-// Event listeners
+//////////////// Event listeners ////////////////////
+
+// Add gifts to list with submit form
 form.addEventListener('submit', (e) => {
 	e.preventDefault()
 	if (gift.value === '') {
@@ -27,6 +29,7 @@ form.addEventListener('submit', (e) => {
 	}
 })
 
+// Remove gift from the list by clicking a gift one at a time.
 giftList.addEventListener('click', (event) => {
 	// remove from the list
 	event.target.remove()
@@ -38,6 +41,7 @@ giftList.addEventListener('click', (event) => {
 	}
 })
 
+// Remove all the gifts at once
 deleteAllButton.addEventListener('click', (event) => {
 	// remove all from the list
 	while (giftList.lastChild) {
@@ -48,7 +52,9 @@ deleteAllButton.addEventListener('click', (event) => {
 	showMsgEmptyList()
 })
 
-// Functions
+//////////////// Functions //////////////////////
+
+// Store a gift in the list
 function storeItem(item) {
 	listOfGifts = [...listOfGifts, item]
 }
